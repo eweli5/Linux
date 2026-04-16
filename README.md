@@ -8,7 +8,6 @@ A compact, copy-paste-ready reference for Linux tasks.
 ```bash
 systemctl start smbd    # start the smb share in the network
 systemctl stop smbd     # stop the smb share in the network
-cloudflared tunnel run jellyfin-tunnel  # start a cloudflared tunnel for example: jellyfin
 lsblk                   # list drives
 mount                   # mount drive
 umount                  # unmount drive
@@ -21,6 +20,10 @@ chmod +x cloudflared-linux-amd64
 
 # Move to PATH
 sudo mv cloudflared-linux-amd64 /usr/local/bin/cloudflared
+
+cloudflared tunnel login
+cloudflared tunnel create my-tunnel
+cloudflared tunnel run jellyfin-tunnel  # start a cloudflared tunnel for example: jellyfin
 
 ```
 ## Make Python Programs & Execute them
