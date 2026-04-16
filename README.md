@@ -1,2 +1,10 @@
-# Linux
-all linux commands id need for my homelab
+smbd
+
+<div align="center">
+
+```
+systemctl start smbd
+
+```
+</div>
+
