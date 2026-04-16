@@ -13,6 +13,15 @@ lsblk                   # list drives
 mount                   # mount drive
 umount                  # unmount drive
 
+# Download latest binary
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+
+# Make executable
+chmod +x cloudflared-linux-amd64
+
+# Move to PATH
+sudo mv cloudflared-linux-amd64 /usr/local/bin/cloudflared
+
 ```
 ## Make Python Programs & Execute them
 
