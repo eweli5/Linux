@@ -1,20 +1,22 @@
 # Daily Linux Commands
 
-A compact, copy-paste-ready reference for common Linux tasks.
+A compact, copy-paste-ready reference for Linux tasks.
 
 ---
-## Custom Commands
+## Common Commands
 
 ```bash
 systemctl start smbd    # start the smb share in the network
-```
-  
-```bash
 systemctl stop smbd     # stop the smb share in the network
+cloudflared tunnel run  # start a cloudflared tunnel
+
 ```
+## Make Python Programs & Execute them
 
 ```bash
-cloudflared tunnel run  # start a cloudflared tunnel
+sudo nano /usr/local/bin/filename  # create python program
+#!usr/bin/env python3   # make this the first line of your code
+sudo chmod +x /usr/local/bin/filename
 ```
 ---
 
