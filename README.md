@@ -1,34 +1,20 @@
-To start the smb share in the network:
-
-<div align="center">
-  
-```
-systemctl start smbd
-```
-</div>
-
-To stop the smb share in the network:
-
-<div align="center">
-  
-```
-systemctl stop smbd
-```
-</div>
-
-To start a cloudflared tunnel:
-<div align="center">
-  
-```
-cloudflared tunnel run
-```
-</div>
-
-
 # Daily Linux Commands
 
 A compact, copy-paste-ready reference for common Linux tasks.
 
+---
+  
+```bash
+systemctl start smbd    # start the smb share in the network
+```
+  
+```bash
+systemctl stop smbd     # stop the smb share in the network
+```
+
+```bash
+cloudflared tunnel run  # start a cloudflared tunnel
+```
 ---
 
 ## Navigation
