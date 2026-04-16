@@ -3,7 +3,8 @@
 A compact, copy-paste-ready reference for common Linux tasks.
 
 ---
-  
+## Custom Commands
+
 ```bash
 systemctl start smbd    # start the smb share in the network
 ```
