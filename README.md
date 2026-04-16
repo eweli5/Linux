@@ -15,3 +15,11 @@ To stop the smb share in the network:
 systemctl stop smbd
 ```
 </div>
+
+To start a cloudflared tunnel:
+<div align="center">
+  
+```
+cloudflared tunnel run
+```
+</div>
