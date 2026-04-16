@@ -23,6 +23,18 @@ sudo mv cloudflared-linux-amd64 /usr/local/bin/cloudflared
 
 cloudflared tunnel login
 cloudflared tunnel create my-tunnel
+cloudflared tunnel route dns my-tunnel app.example.com
+nano ~/.cloudflared/config.yml
+
+Example:
+tunnel: my-tunnel
+credentials-file: /home/user/.cloudflared/xxxxx.json
+
+ingress:
+  - hostname: example.com
+    service: http://localhost:3000
+  - service: http_status:404
+
 cloudflared tunnel run jellyfin-tunnel  # start a cloudflared tunnel for example: jellyfin
 
 ```
