@@ -15,7 +15,7 @@ cloudflared tunnel run  # start a cloudflared tunnel
 
 ```bash
 sudo nano /usr/local/bin/filename  # create python program
-#!usr/bin/env python3   # make this the first line of your code
+"#!usr/bin/env python3"   # make this the first line of your code
 sudo chmod +x /usr/local/bin/filename
 ```
 ---
