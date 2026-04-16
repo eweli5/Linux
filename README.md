@@ -4,7 +4,6 @@ smbd
 
 ```
 systemctl start smbd
-
 ```
 </div>
 
