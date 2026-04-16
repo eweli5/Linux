@@ -3,12 +3,15 @@
 A compact, copy-paste-ready reference for Linux tasks.
 
 ---
-## Common Commands
+## Common Commands in my Homelab
 
 ```bash
 systemctl start smbd    # start the smb share in the network
 systemctl stop smbd     # stop the smb share in the network
 cloudflared tunnel run jellyfin-tunnel  # start a cloudflared tunnel for example: jellyfin
+lsblk                   # list drives
+mount                   # mount drive
+umount                  # unmount drive
 
 ```
 ## Make Python Programs & Execute them
