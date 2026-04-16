@@ -8,7 +8,7 @@ A compact, copy-paste-ready reference for Linux tasks.
 ```bash
 systemctl start smbd    # start the smb share in the network
 systemctl stop smbd     # stop the smb share in the network
-cloudflared tunnel run  # start a cloudflared tunnel
+cloudflared tunnel run jellyfin-tunnel  # start a cloudflared tunnel for example: jellyfin
 
 ```
 ## Make Python Programs & Execute them
