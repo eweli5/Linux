@@ -16,7 +16,7 @@ cloudflared tunnel run jellyfin-tunnel  # start a cloudflared tunnel for example
 ```bash
 sudo nano /usr/local/bin/filename  # create python program
 "#!usr/bin/env python3"   # make this the first line of your code
-sudo chmod +x /usr/local/bin/filename
+sudo chmod +x /usr/local/bin/filename # make program executable
 ```
 ---
 
