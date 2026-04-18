@@ -12,6 +12,26 @@ lsblk                   # list drives
 mount                   # mount drive
 umount                  # unmount drive
 
+# enable ethernet on fresh i3-wm Installation
+ip link # find interface name for example: enp1s0
+sudo nano /etc/systemd/network/20-wired.network # create config file
+
+For Example:
+[Match]
+Name=enp2s0
+
+[Network]
+Address=192.168.1.50/24
+Gateway=192.168.1.1
+DNS=1.1.1.1
+DNS=8.8.8.8
+# Example
+sudo systemctl enable --now systemd-networkd # enable networkd
+sudo systemctl enable --now systemd-resolved # enable resolved
+# restart network
+sudo systemctl restart systemd-networkd
+
+
 # Download latest binary
 wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
 
