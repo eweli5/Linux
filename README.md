@@ -44,6 +44,7 @@ sudo mv cloudflared-linux-amd64 /usr/local/bin/cloudflared
 cloudflared tunnel login
 cloudflared tunnel create my-tunnel
 cloudflared tunnel route dns my-tunnel app.example.com
+/root/.cloudflared/cert.pem # credentials
 nano ~/.cloudflared/config.yml
 
 Example:
